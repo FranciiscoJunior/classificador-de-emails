@@ -4,4 +4,4 @@ import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
 
-print("NLTK recursos baixados com sucesso!")
+print("Recursos NLTK baixados com sucesso!")
