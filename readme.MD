@@ -8,7 +8,7 @@ Este projeto é uma aplicação web que permite analisar o conteúdo de emails, 
 
 HTML, CSS, JavaScript (Vanilla)
 
-## Backend: 
+## Backend:
 
 Python (Flask), NLP com SpaCy e NLTK
 
@@ -101,13 +101,19 @@ O frontend se comunicará com o backend Flask, enviando o conteúdo dos emails e
 ## Estrutura do Projeto
 
 /classificador-de-emails
-  ├── index.html           # Interface HTML
-  ├── styles.css           # Estilos CSS
-  ├── script.js            # Lógica de interação com o frontend
-  ├── app.py               # Backend em Flask
-  ├── /templates           # Diretório para templates Flask (caso utilize)
-  ├── /static              # Arquivos estáticos (ex. imagens, CSS, JS)
-  └── requirements.txt     # Arquivo de dependências (opcional)
+  ├── /static                # Arquivos estáticos (CSS, JS, Imagens)
+  │   ├── /css               # Arquivos CSS
+  │   └── /js                # Arquivos JavaScript
+  ├── /templates             # Arquivos HTML (se usar Flask para renderizar templates)
+  ├── /venv                  # Ambiente virtual Python (opcional, para dependências)
+  ├── app.py                 # Backend (Flask) com a lógica de processamento de emails
+  ├── config_nltk.py         # Arquivo de configuração do NLTK (baixa stopwords e tokenizer)
+  ├── index.html             # Interface HTML do Frontend
+  ├── styles.css             # Estilos CSS
+  ├── script.js              # Lógica JavaScript para interações no Frontend
+  ├── requirements.txt       # Arquivo com dependências do projeto (opcional)
+  ├── .gitignore             # Arquivo para ignorar arquivos desnecessários no git (ex: ambiente virtual, arquivos temporários)
+  └── README.md              # Documentação do projeto (README)
 
 ## Como Funciona:
 1. Frontend (HTML + JavaScript)
